@@ -9,12 +9,16 @@ struct Node{
 
 typedef struct Node node;
 node *head; //global variable, can be accesses anywhere
+
+//Insert at the beginning of the linked list
 void Insert(int x){
     node *temp = (node *)malloc(sizeof(struct Node));
     temp->data = x;
     temp->next = head;
     head = temp;
 }
+
+//Print the linked list
 void Print()
 {
     node *temp = head;
