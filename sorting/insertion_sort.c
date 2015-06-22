@@ -34,7 +34,7 @@ void printArray(int arr[], int n)
  
  
  
-/* Driver program to test insertion sort */
+/* Driver Program to test insertion sort */
 int main()
 {
     int arr[] = {12, 11, 13, 5, 6};
