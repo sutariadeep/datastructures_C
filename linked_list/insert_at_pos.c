@@ -10,7 +10,7 @@ struct Node{
 typedef struct Node node;
 node *head; //global variable, can be accesses anywhere
 
-#Insert the data as per the node number n
+//Insert the data as per the node number n
 void Insert(int data,int n){
     node *temp1 = (struct Node *)malloc(sizeof(struct Node));
     temp1->data = data;
@@ -28,7 +28,7 @@ void Insert(int data,int n){
     temp2->next = temp1;
 }
 
-#Print the linked list
+//Print the linked list
 void Print()
 {
     node * temp = head;
