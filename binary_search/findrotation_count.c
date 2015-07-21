@@ -12,7 +12,7 @@ int FindRotationCount(int A[],int n){
         if(A[mid] <= A[next] && A[mid] <= A[prev])   // Case 2
             return mid;
         else if(A[mid] <= A[high]) high = mid - 1;   //Case 3
-        else if(A[mid] >= A[low]) low = mid + 1;   //Case 3
+        else if(A[mid] >= A[low]) low = mid + 1;   //Case 4
     }
     return -1;
 }
