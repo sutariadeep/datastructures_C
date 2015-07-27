@@ -1,12 +1,6 @@
 // C program for implementation of selection sort
 #include <stdio.h>
- 
-void swap(int *xp, int *yp)
-{
-    int temp = *xp;
-    *xp = *yp;
-    *yp = temp;
-}
+
  
 void selectionSort(int arr[], int n)
 {
@@ -22,7 +16,9 @@ void selectionSort(int arr[], int n)
             min_idx = j;
  
         // Swap the found minimum element with the first element
-        swap(&arr[min_idx], &arr[i]);
+        int temp = arr[i];
+        arr[i] = arr[min_idx];
+        arr[min_idx] = temp;
     }
 }
  
