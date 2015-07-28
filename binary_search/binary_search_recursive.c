@@ -5,7 +5,7 @@ int BinarySearch(int A[],int low,int high,int x){
     if (low > high) return -1;
     int mid = low + (high-low)/2; //low+high can overflow
     if(x == A[mid]) return mid;   // Found X, return (exit)
-    else if(x < A[mid]) return BinarySearch(A, low, mid-1,x); //X kies before mid
+    else if(x < A[mid]) return BinarySearch(A, low, mid-1,x); //X lies before mid
     else return BinarySearch(A, mid+1, high, x);   //X lies after mid
 }
 
