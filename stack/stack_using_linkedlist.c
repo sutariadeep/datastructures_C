@@ -33,8 +33,8 @@ int Top(){
 
 // This function will return 1 (true) if stack is empty, 0 (false) otherwise
 int IsEmpty(){
-    if (top->link == -1) return 1;
-    return 0;
+    if (top->link == NULL) return 0;
+    else return 1;
 }
 // This function is just to test the implementation of stack.
 // This will print all the elements in the stack at any stage.
