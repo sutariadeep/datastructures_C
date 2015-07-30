@@ -14,10 +14,11 @@ void selectionSort(int arr[], int n)
         for (j = i+1; j < n; j++){
             if (arr[j] < arr[min_idx])
             {
-            int temp = arr[i];
-            arr[i] = arr[min_idx];
-            arr[min_idx] = temp;
+                min_idx = j;      //update the index of minimum element
             }
+        int temp = arr[i];
+        arr[i] = arr[min_idx];
+        arr[min_idx] = temp;
         }
     }
 }
