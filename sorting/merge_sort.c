@@ -21,7 +21,7 @@ void merge(int arr[], int l, int m, int r)
     /* Merge the temp arrays back into arr[l..r]*/
     i = 0;
     j = 0;
-    k = l;
+    k = 1;
     while (i < n1 && j < n2)
     {
         if (L[i] <= R[j])
